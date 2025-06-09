@@ -1,10 +1,12 @@
-# Faça um scrip que leia o comprimento do cateto oposto e do cateto adjacente de um triangulo retangulo, calcule e mostre o comprimento da hipotenusa
+#Um script que sorteia um entre 4 alunos
+import random
+n1 = str(input('Primeiro aluno: '))
+n2 = str(input('Segundo aluno: '))
+n3 = str(input('Terceiro aluno: '))
+n4 = str(input('Quarto aluno: '))
+lista = [n1, n2, n3, n4]
+escolhido = random.choice(lista)
 
-import math
+print('O aluno escolhido foi {}'.format(escolhido))
 
-catoposto = int(input('Digite um cateto: '))
-catadja = int(input('Digite outro cateto: '))
 
-hipotenusa = math.sqrt(catoposto**2 + catadja**2)
-
-print('A hipotenusa é ', hipotenusa)
